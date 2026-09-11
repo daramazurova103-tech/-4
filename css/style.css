@@ -1,0 +1,38 @@
+<div class="form-container">
+  <h2 class="form-container__title">Регистрация</h2>
+  <p class="form-container__desc">Заполните поля для создания аккаунта.</p>
+
+  <form class="register-form" action="https://postman-echo.com/post" method="POST">
+    <label class="register-form__field">
+      Имя
+      <input type="text" name="firstname" required class="register-form__input">
+    </label>
+
+    <label class="register-form__field">
+      Фамилия
+      <input type="text" name="lastname" required class="register-form__input">
+    </label>
+
+    <label class="register-form__field">
+      Электронная почта
+      <input type="email" name="email" required class="register-form__input">
+    </label>
+
+    <label class="register-form__field">
+      Пароль
+      <input type="password" name="password" required class="register-form__input">
+    </label>
+
+    <label class="register-form__field">
+      Подтвердите пароль
+      <input type="password" name="confirm_password" required class="register-form__input">
+    </label>
+
+    <label class="register-form__checkbox-label">
+      <input type="checkbox" name="agreement" required class="register-form__checkbox">
+      Я согласен с условиями использования сервиса
+    </label>
+
+    <button type="submit" class="register-form__button">Создать аккаунт</button>
+  </form>
+</div>
