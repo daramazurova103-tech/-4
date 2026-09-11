@@ -1,38 +1,92 @@
-<div class="form-container">
-  <h2 class="form-container__title">Регистрация</h2>
-  <p class="form-container__desc">Заполните поля для создания аккаунта.</p>
+body {
+  font-family: sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
 
-  <form class="register-form" action="https://postman-echo.com/post" method="POST">
-    <label class="register-form__field">
-      Имя
-      <input type="text" name="firstname" required class="register-form__input">
-    </label>
+.form-container {
+  background-color: #1e1e1e;
+  padding: 32px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
 
-    <label class="register-form__field">
-      Фамилия
-      <input type="text" name="lastname" required class="register-form__input">
-    </label>
+.form-container__title {
+  font-size: 24px;
+  margin: 0 0 8px 0;
+}
 
-    <label class="register-form__field">
-      Электронная почта
-      <input type="email" name="email" required class="register-form__input">
-    </label>
+.form-container__desc {
+  font-size: 14px;
+  color: #a0a0a0;
+  margin: 0 0 24px 0;
+}
 
-    <label class="register-form__field">
-      Пароль
-      <input type="password" name="password" required class="register-form__input">
-    </label>
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-    <label class="register-form__field">
-      Подтвердите пароль
-      <input type="password" name="confirm_password" required class="register-form__input">
-    </label>
+.register-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #cccccc;
+}
 
-    <label class="register-form__checkbox-label">
-      <input type="checkbox" name="agreement" required class="register-form__checkbox">
-      Я согласен с условиями использования сервиса
-    </label>
+.register-form__input {
+  background-color: #2a2a2a;
+  border: 1px solid #3d3d3d;
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
 
-    <button type="submit" class="register-form__button">Создать аккаунт</button>
-  </form>
-</div>
+.register-form__input:focus {
+  border-color: #ffd600;
+}
+
+.register-form__checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #b0b0b0;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.register-form__checkbox {
+  accent-color: #ffd600;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.register-form__button {
+  background-color: #ffd600;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s;
+}
+
+.register-form__button:hover {
+  background-color: #ffea00;
+}
